@@ -1,8 +1,20 @@
-# React + Vite
+# Ian Toniolo - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website, built with React for learning purposes. It showcases my skills, experience, and projects as a software engineer.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+You can view the live portfolio on GitHub Pages here:
+
+[https://iantoniolo.github.io/portfolio/](https://iantoniolo.github.io/portfolio/)
+
+## Technologies Used
+
+- React
+- Vite (for faster builds and a better development experience)
+- Tailwind CSS (for styling)
+- GitHub Pages (for deployment)
+
+## About the Project
+
+This project was created as a learning exercise in building single-page applications using React. It demonstrates the usage of React components, state management, routing, and deploying a React app on GitHub Pages.
