@@ -94,7 +94,7 @@ function Home() {
           Contact Me
         </a>
         <a
-          href="/documents/curriculum.pdf"
+          href="documents/curriculum.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="px-6 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-black transition"
