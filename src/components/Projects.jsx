@@ -9,6 +9,13 @@ function Projects() {
       githubLink: "https://github.com/iantoniolo/lol-summoner-match-manager",
       techStack: ["HTML5", "CSS3", "FastAPI", "MongoDB"],
     },
+    {
+      title: "Financial Wallet",
+      description:
+        "An app that offers a secure way to manage user payments with RESTful APIs. Features NestJS, JWT for auth, and PostgreSQL for data storage.",
+      githubLink: "https://github.com/iantoniolo/financial-wallet",
+      techStack: ["Node.js", "Nest.js", "Typescript", "PostgreSQL", "Docker"],
+    },
   ];
 
   return (

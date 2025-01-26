@@ -16,17 +16,14 @@ import {
   SiGit,
   SiGithub,
   SiMongodb,
+  SiNestjs,
 } from "react-icons/si";
 
 function Skills() {
   const skills = [
-    { name: "HTML5", icon: <FaHtml5 /> },
-    { name: "CSS3", icon: <FaCss3Alt /> },
-    { name: "JavaScript", icon: <FaJs /> },
-    { name: "Bootstrap", icon: <FaBootstrap /> },
-    { name: "React.js", icon: <FaReact /> },
     { name: "Node.js", icon: <FaNodeJs /> },
     { name: "Express.js", icon: <FaNodeJs /> },
+    { name: "Nest.js", icon: <SiNestjs /> },
     { name: "Python", icon: <FaPython /> },
     { name: "Django", icon: <SiDjango /> },
     { name: "FastAPI", icon: <SiFastapi /> },
@@ -36,6 +33,11 @@ function Skills() {
     { name: "Git", icon: <SiGit /> },
     { name: "GitHub", icon: <SiGithub /> },
     { name: "AWS", icon: <FaAws /> },
+    { name: "JavaScript", icon: <FaJs /> },
+    { name: "HTML5", icon: <FaHtml5 /> },
+    { name: "CSS3", icon: <FaCss3Alt /> },
+    { name: "React.js", icon: <FaReact /> },
+    { name: "Bootstrap", icon: <FaBootstrap /> },
   ];
 
   return (
