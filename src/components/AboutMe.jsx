@@ -21,7 +21,7 @@ function AboutMe() {
         {/* Image */}
         <div className="flex justify-center">
           <img
-            src="images/me.jpg"
+            src="assets/me.jpg"
             alt="Ian Toniolo"
             className="w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-amber-400"
           />

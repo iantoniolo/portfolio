@@ -7,7 +7,6 @@ import {
   FaDocker,
   FaPython,
   FaAws,
-  FaBootstrap,
 } from "react-icons/fa";
 import {
   SiPostgresql,
@@ -37,7 +36,6 @@ function Skills() {
     { name: "HTML5", icon: <FaHtml5 /> },
     { name: "CSS3", icon: <FaCss3Alt /> },
     { name: "React.js", icon: <FaReact /> },
-    { name: "Bootstrap", icon: <FaBootstrap /> },
   ];
 
   return (
