@@ -16,6 +16,20 @@ function Projects() {
       githubLink: "https://github.com/iantoniolo/financial-wallet",
       techStack: ["Node.js", "Nest.js", "Typescript", "PostgreSQL", "Docker"],
     },
+    {
+      title: "ToDoList Spring Boot API",
+      description:
+        "ToDoList API in Java with Spring Boot, JWT authentication, PostgreSQL, Docker and automated testing.",
+      githubLink: "https://github.com/iantoniolo/todolist-spring",
+      techStack: [
+        "Java",
+        "Spring Boot",
+        "JWT",
+        "PostgreSQL",
+        "Docker",
+        "JUnit",
+      ],
+    },
   ];
 
   return (
