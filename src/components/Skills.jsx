@@ -7,6 +7,7 @@ import {
   FaDocker,
   FaPython,
   FaAws,
+  FaJava,
 } from "react-icons/fa";
 import {
   SiPostgresql,
@@ -16,7 +17,6 @@ import {
   SiGithub,
   SiMongodb,
   SiNestjs,
-  SiJava,
   SiSpringboot,
 } from "react-icons/si";
 
@@ -28,7 +28,7 @@ function Skills() {
     { name: "Python", icon: <FaPython /> },
     { name: "Django", icon: <SiDjango /> },
     { name: "FastAPI", icon: <SiFastapi /> },
-    { name: "Java", icon: <SiJava /> },
+    { name: "Java", icon: <FaJava /> },
     { name: "Spring Boot", icon: <SiSpringboot /> },
     { name: "PostgreSQL", icon: <SiPostgresql /> },
     { name: "MongoDB", icon: <SiMongodb /> },
