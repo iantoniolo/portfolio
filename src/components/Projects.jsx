@@ -30,6 +30,22 @@ function Projects() {
         "JUnit",
       ],
     },
+    {
+      title: "CNJ Processor",
+      description:
+        "A complete system for querying, processing, and analyzing CNJ data, composed of a serverless backend (Node.js/AWS) and a modern Angular frontend. Enables CNJ number queries through a web interface, with validation and asynchronous processing using Lambda, SQS, and DynamoDB. Automated deployment via GitHub Actions and a scalable, low-cost architecture based on AWS microservices.",
+      githubLink: "https://github.com/iantoniolo/cnj-processor",
+      techStack: [
+        "Serverless Framework",
+        "GitHub Actions",
+        "Angular (Frontend)",
+        "Node.js (Backend)",
+        "AWS Lambda",
+        "AWS SQS",
+        "DynamoDB",
+        "CloudWatch"
+      ],
+    },
   ];
 
   return (
