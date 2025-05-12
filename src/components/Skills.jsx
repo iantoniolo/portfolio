@@ -16,6 +16,8 @@ import {
   SiGithub,
   SiMongodb,
   SiNestjs,
+  SiJava,
+  SiSpringboot,
 } from "react-icons/si";
 
 function Skills() {
@@ -26,6 +28,8 @@ function Skills() {
     { name: "Python", icon: <FaPython /> },
     { name: "Django", icon: <SiDjango /> },
     { name: "FastAPI", icon: <SiFastapi /> },
+    { name: "Java", icon: <SiJava /> },
+    { name: "Spring Boot", icon: <SiSpringboot /> },
     { name: "PostgreSQL", icon: <SiPostgresql /> },
     { name: "MongoDB", icon: <SiMongodb /> },
     { name: "Docker", icon: <FaDocker /> },
