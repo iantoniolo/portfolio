@@ -1,3 +1,5 @@
+import { LanguageProvider } from "./i18n/LanguageContext";
+import { ThemeProvider } from "./i18n/ThemeContext";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
@@ -8,15 +10,19 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Home />
-      <AboutMe />
-      <Skills />
-      <Projects />
-      <Experiences />
-      <Footer />
-    </div>
+    <ThemeProvider>
+      <LanguageProvider>
+        <div>
+          <Navbar />
+          <Home />
+          <AboutMe />
+          <Skills />
+          <Projects />
+          <Experiences />
+          <Footer />
+        </div>
+      </LanguageProvider>
+    </ThemeProvider>
   );
 }
 

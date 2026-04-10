@@ -5,29 +5,36 @@ import Particles from "react-tsparticles";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import Illustration from "/assets/illustration.svg";
+import { useLanguage } from "../i18n/LanguageContext";
+import { useTheme } from "../i18n/ThemeContext";
 
 function Home() {
   const typedElement = useRef(null);
+  const typedInstance = useRef(null);
+  const { t } = useLanguage();
+  const { dark } = useTheme();
 
   useEffect(() => {
-    const options = {
-      strings: ["Software Engineer", "Web Developer", "Tech Enthusiast"],
+    if (typedInstance.current) {
+      typedInstance.current.destroy();
+    }
+
+    typedInstance.current = new Typed(typedElement.current, {
+      strings: t.home.typedStrings,
       typeSpeed: 50,
       backSpeed: 30,
       loop: true,
-    };
-
-    const typed = new Typed(typedElement.current, options);
+    });
 
     return () => {
-      typed.destroy();
+      typedInstance.current.destroy();
     };
-  }, []);
+  }, [t]);
 
   return (
     <section
       id="home"
-      className="relative h-screen w-full bg-cover bg-center flex items-center justify-center bg-neutral-800 px-4 md:px-0"
+      className="relative h-screen w-full bg-cover bg-center flex items-center justify-center bg-gray-50 dark:bg-neutral-800 px-4 md:px-0 transition-colors duration-300"
     >
       {/* Particles Effect */}
       <Particles
@@ -37,7 +44,11 @@ function Home() {
             number: { value: 50 },
             size: { value: 3 },
             move: { speed: 2 },
-            line_linked: { enable: true, color: "#ffffff" },
+            color: { value: dark ? "#ffffff" : "#a3a3a3" },
+            line_linked: {
+              enable: true,
+              color: dark ? "#ffffff" : "#a3a3a3",
+            },
           },
         }}
       />
@@ -51,29 +62,27 @@ function Home() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <motion.div className="text-3xl md:text-4xl font-bold text-white">
-            Hello, my name is
+          <motion.div className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
+            {t.home.greeting}
           </motion.div>
           <motion.div className="text-4xl md:text-5xl font-bold text-amber-400">
             Ian Toniolo
           </motion.div>
-          <motion.div className="text-xl md:text-2xl font-bold text-white">
+          <motion.div className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white">
             <span ref={typedElement}></span>
           </motion.div>
 
           <motion.p
-            className="text-md md:text-lg text-neutral-400 max-w-xl"
+            className="text-md md:text-lg text-gray-500 dark:text-neutral-400 max-w-xl"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
-            I am a passionate software engineer specializing in building
-            scalable web applications, with a focus on clean code and
-            performance optimization.
+            {t.home.bio}
           </motion.p>
 
-          <div className="text-lg md:text-xl italic text-amber-300">
-            Transforming ideas into scalable solutions.
+          <div className="text-lg md:text-xl italic text-amber-500 dark:text-amber-300">
+            {t.home.tagline}
           </div>
 
           {/* Action buttons */}
@@ -84,21 +93,21 @@ function Home() {
               duration={500}
               className="px-6 py-3 bg-amber-400 text-black font-semibold rounded-lg hover:bg-amber-500 transition cursor-pointer"
             >
-              View My Projects
+              {t.home.viewProjects}
             </Link>
             <a
               href="mailto:iantoniolo@hotmail.com"
               className="px-6 py-3 bg-transparent border-2 border-amber-400 text-amber-400 font-semibold rounded-lg hover:bg-amber-400 hover:text-black transition"
             >
-              Contact Me
+              {t.home.contactMe}
             </a>
             <a
               href="documents/curriculum.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-black transition"
+              className="px-6 py-3 bg-transparent border-2 border-gray-900 dark:border-white text-gray-900 dark:text-white font-semibold rounded-lg hover:bg-gray-900 dark:hover:bg-white hover:text-white dark:hover:text-black transition"
             >
-              Download Resume
+              {t.home.downloadResume}
             </a>
           </div>
 
@@ -109,14 +118,14 @@ function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin className="text-2xl text-white hover:text-amber-400 transition" />
+              <FaLinkedin className="text-2xl text-gray-900 dark:text-white hover:text-amber-400 transition" />
             </a>
             <a
               href="https://github.com/iantoniolo"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub className="text-2xl text-white hover:text-amber-400 transition" />
+              <FaGithub className="text-2xl text-gray-900 dark:text-white hover:text-amber-400 transition" />
             </a>
           </div>
         </motion.div>
