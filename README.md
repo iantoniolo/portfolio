@@ -1,20 +1,19 @@
 # Ian Toniolo - Portfolio
 
-This is my personal portfolio website, built with React for learning purposes. It showcases my skills, experience, and projects as a software engineer.
+Personal portfolio website showcasing my skills, experience, and projects as a software engineer. Built with pure HTML and CSS — no frameworks, no build step.
 
 ## Live Demo
-
-You can view the live portfolio on GitHub Pages here:
 
 [https://iantoniolo.github.io/portfolio/](https://iantoniolo.github.io/portfolio/)
 
 ## Technologies Used
 
-- React
-- Vite (for faster builds and a better development experience)
-- Tailwind CSS (for styling)
-- GitHub Pages (for deployment)
+- HTML
+- CSS (custom properties, layers, responsive design)
+- GitHub Pages (deployment)
 
-## About the Project
+## Features
 
-This project was created as a learning exercise in building single-page applications using React. It demonstrates the usage of React components, state management, routing, and deploying a React app on GitHub Pages.
+- Bilingual support (English and Portuguese)
+- Fully responsive layout
+- SEO optimized with Open Graph and Twitter Card meta tags
