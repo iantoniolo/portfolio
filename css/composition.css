@@ -1,0 +1,47 @@
+@layer composition {
+  .wrapper {
+    max-width: var(--max-width);
+    margin-inline: auto;
+    padding-inline: var(--space-lg);
+  }
+
+  .flow > * + * {
+    margin-block-start: var(--flow-space, 1em);
+  }
+
+  .grid[data-layout="projects"] {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-xl);
+  }
+
+  .grid[data-layout="skills"] {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: var(--space-md);
+  }
+
+  .cluster {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    align-items: center;
+  }
+
+  .sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2xl);
+    align-items: center;
+  }
+
+  .sidebar > :first-child {
+    flex: 3;
+    min-width: 55%;
+  }
+
+  .sidebar > :last-child {
+    flex: 2;
+    min-width: 250px;
+  }
+}

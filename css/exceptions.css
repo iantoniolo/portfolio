@@ -1,0 +1,121 @@
+@layer exceptions {
+  /* ===== Menu mobile CSS-only ===== */
+  #nav-toggle {
+    display: none;
+  }
+
+  #nav-toggle:checked ~ .navbar__menu {
+    display: flex;
+  }
+
+  #nav-toggle:checked ~ .navbar__hamburger span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  #nav-toggle:checked ~ .navbar__hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+
+  #nav-toggle:checked ~ .navbar__hamburger span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  /* ===== Theme toggle (CSS-only via :has()) ===== */
+  html:has(#theme-toggle:checked) {
+    color-scheme: light;
+  }
+
+  /* ===== Focus visible ===== */
+  *:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 3px;
+  }
+
+  /* ===== Reduced motion ===== */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+
+    .typewriter {
+      animation: none;
+      border-right: none;
+      width: auto;
+      overflow: visible;
+      white-space: normal;
+    }
+  }
+
+  /* ===== Hover only (prevent stuck hover on touch) ===== */
+  @media (hover: hover) {
+    .skill-card:hover {
+      transform: translateY(-0.25rem);
+      box-shadow: var(--shadow-accent);
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: var(--shadow-accent);
+    }
+
+    .hero__social a:hover {
+      color: var(--color-accent);
+    }
+  }
+
+  @media (hover: none) {
+    .skill-card:hover,
+    .card:hover {
+      transform: none;
+      box-shadow: var(--shadow-lg);
+    }
+  }
+
+  /* ===== Content visibility ===== */
+  .section:not(:first-of-type) {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 500px;
+  }
+
+  /* ===== Print ===== */
+  @media print {
+    .navbar,
+    .footer,
+    .hero__social,
+    .hero__actions,
+    .skip-link,
+    .navbar__hamburger {
+      display: none !important;
+    }
+
+    body {
+      color: #000;
+      background: #fff;
+    }
+
+    .section {
+      padding-block: 1rem;
+      break-inside: avoid;
+    }
+
+    a {
+      color: #000;
+      text-decoration: underline;
+    }
+
+    a[href]::after {
+      content: " (" attr(href) ")";
+      font-size: 0.8em;
+    }
+
+    a[href^="#"]::after,
+    a[href^="javascript"]::after {
+      content: "";
+    }
+  }
+}

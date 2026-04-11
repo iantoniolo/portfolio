@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ian Toniolo - Desenvolvedor Full Stack com foco em backend, especializado em arquiteturas serverless e event-driven na AWS.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ian Toniolo - Desenvolvedor de Software">
+  <meta property="og:description" content="Desenvolvedor Full Stack com foco em backend, especializado em arquiteturas serverless e event-driven na AWS.">
+  <meta property="og:image" content="https://iantoniolo.github.io/portfolio/assets/og-image.jpg">
+  <meta property="og:url" content="https://iantoniolo.github.io/portfolio/pt/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ian Toniolo - Desenvolvedor de Software">
+  <meta name="twitter:description" content="Desenvolvedor Full Stack com foco em backend, especializado em arquiteturas serverless e event-driven na AWS.">
+  <meta name="twitter:image" content="https://iantoniolo.github.io/portfolio/assets/og-image.jpg">
+
+  <!-- Canonical & Hreflang -->
+  <link rel="canonical" href="https://iantoniolo.github.io/portfolio/pt/">
+  <link rel="alternate" hreflang="pt-BR" href="https://iantoniolo.github.io/portfolio/pt/">
+  <link rel="alternate" hreflang="en" href="https://iantoniolo.github.io/portfolio/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="../assets/icon.jpg">
+
+  <!-- CSS (order matters: layers) -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/composition.css">
+  <link rel="stylesheet" href="../css/blocks.css">
+  <link rel="stylesheet" href="../css/utilities.css">
+  <link rel="stylesheet" href="../css/exceptions.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ian Toniolo",
+    "url": "https://iantoniolo.github.io/portfolio/",
+    "jobTitle": "Desenvolvedor Full Stack",
+    "sameAs": [
+      "https://linkedin.com/in/iantoniolo",
+      "https://github.com/iantoniolo"
+    ]
+  }
+  </script>
+
+  <title>Ian Toniolo - Desenvolvedor de Software</title>
+</head>
+<body>
+
+  <!-- Skip link -->
+  <a href="#main" class="skip-link">Pular para o conte&uacute;do principal</a>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="navbar" role="banner">
+    <div class="wrapper">
+      <a href="#hero" class="navbar__logo">Ian Toniolo</a>
+
+      <input type="checkbox" id="nav-toggle" class="visually-hidden" aria-label="Alternar menu">
+      <label for="nav-toggle" class="navbar__hamburger" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <ul class="navbar__menu" role="list">
+        <li><a href="#hero">In&iacute;cio</a></li>
+        <li><a href="#about">Sobre Mim</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#experiences">Experi&ecirc;ncias</a></li>
+      </ul>
+
+      <div class="navbar__actions">
+        <input type="checkbox" id="theme-toggle" class="visually-hidden">
+        <label for="theme-toggle" class="navbar__theme" aria-label="Alternar modo claro">
+          <span class="navbar__theme-track">
+            <span class="navbar__theme-thumb"></span>
+          </span>
+        </label>
+        <a href="../" class="navbar__lang" aria-label="Switch to English">EN</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main id="main">
+
+    <!-- HERO -->
+    <section id="hero" class="hero section">
+      <div class="wrapper sidebar">
+        <div class="flow" style="--flow-space: 0.75em">
+          <p class="hero__greeting">Ol&aacute;, meu nome &eacute;</p>
+          <h1 class="hero__name">Ian Toniolo</h1>
+          <p class="hero__title">
+            <span class="typewriter">Desenvolvedor Full Stack</span>
+          </p>
+          <p class="hero__bio">Desenvolvedor Full Stack com foco em backend, especializado em arquiteturas serverless e event-driven na AWS. Experi&ecirc;ncia com pipelines de processamento ass&iacute;ncrono, integra&ccedil;&otilde;es de IA e modelagem de dados em dom&iacute;nios regulados.</p>
+          <p class="hero__tagline">Transformando ideias em solu&ccedil;&otilde;es serverless escal&aacute;veis.</p>
+
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">Ver Projetos</a>
+            <a href="mailto:iantoniolo@hotmail.com" class="btn btn--outline">Contato</a>
+            <a href="../documents/curriculum.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">Baixar Curr&iacute;culo</a>
+          </div>
+
+          <div class="hero__social">
+            <a href="https://linkedin.com/in/iantoniolo" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#icon-linkedin"></use></svg>
+            </a>
+            <a href="https://github.com/iantoniolo" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#icon-github"></use></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <img src="../assets/illustration.svg" alt="Ilustra&ccedil;&atilde;o do desenvolvedor" class="hero__illustration" width="320" height="320" loading="eager">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section section--alt animate-on-scroll">
+      <div class="wrapper">
+        <h2 class="section__title">Sobre Mim</h2>
+        <div class="about__content">
+          <p class="about__bio">Ol&aacute;! Sou Ian Toniolo, Desenvolvedor Full Stack com foco em backend, especializado em arquiteturas serverless e event-driven na AWS (Lambda, SQS/SNS, DynamoDB, API Gateway). Atualmente cursando Ci&ecirc;ncia da Computa&ccedil;&atilde;o na Universidade Federal do ABC (UFABC), complementando meu bacharelado interdisciplinar em Ci&ecirc;ncia e Tecnologia. Tenho experi&ecirc;ncia com pipelines de processamento ass&iacute;ncrono, integra&ccedil;&otilde;es de IA para an&aacute;lise documental e modelagem de dados em dom&iacute;nios regulados. Certificado AWS Solutions Architect &ndash; Associate.</p>
+          <img src="../assets/me.jpg" alt="Foto de Ian Toniolo" class="about__photo" width="128" height="128" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section animate-on-scroll">
+      <div class="wrapper">
+        <h2 class="section__title">Habilidades</h2>
+
+        <div class="skills__category">
+          <h3>Backend</h3>
+          <div class="pills">
+            <span class="pill">Node.js</span>
+            <span class="pill">TypeScript</span>
+            <span class="pill">NestJS</span>
+            <span class="pill">Express.js</span>
+            <span class="pill">Python</span>
+            <span class="pill">Django</span>
+          </div>
+        </div>
+
+        <div class="skills__category">
+          <h3>Frontend</h3>
+          <div class="pills">
+            <span class="pill">Vue.js</span>
+            <span class="pill">Angular</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">HTML5</span>
+            <span class="pill">CSS3</span>
+          </div>
+        </div>
+
+        <div class="skills__category">
+          <h3>Bancos de Dados</h3>
+          <div class="pills">
+            <span class="pill">PostgreSQL</span>
+            <span class="pill">DynamoDB</span>
+          </div>
+        </div>
+
+        <div class="skills__category">
+          <h3>AWS</h3>
+          <div class="pills">
+            <span class="pill">Lambda</span>
+            <span class="pill">API Gateway</span>
+            <span class="pill">SQS/SNS</span>
+            <span class="pill">S3</span>
+            <span class="pill">Textract</span>
+            <span class="pill">Cognito</span>
+            <span class="pill">EventBridge</span>
+            <span class="pill">CloudWatch</span>
+            <span class="pill">IAM</span>
+            <span class="pill">EC2</span>
+          </div>
+        </div>
+
+        <div class="skills__category">
+          <h3>Arquitetura &amp; Princ&iacute;pios</h3>
+          <div class="pills">
+            <span class="pill">SOLID</span>
+            <span class="pill">Clean Architecture</span>
+            <span class="pill">Event-Driven</span>
+            <span class="pill">Serverless</span>
+            <span class="pill">REST APIs</span>
+          </div>
+        </div>
+
+        <div class="skills__category">
+          <h3>Testes</h3>
+          <div class="pills">
+            <span class="pill">Jest</span>
+            <span class="pill">Pytest</span>
+          </div>
+        </div>
+
+        <div class="skills__category">
+          <h3>DevOps</h3>
+          <div class="pills">
+            <span class="pill">Docker</span>
+            <span class="pill">Docker Compose</span>
+            <span class="pill">Serverless Framework</span>
+            <span class="pill">GitHub Actions</span>
+            <span class="pill">CloudFormation/SAM</span>
+          </div>
+        </div>
+
+        <div class="skills__category">
+          <h3>Certifica&ccedil;&otilde;es</h3>
+          <div class="pills">
+            <span class="pill">AWS Solutions Architect &ndash; Associate</span>
+            <span class="pill">AWS Cloud Practitioner</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section section--alt animate-on-scroll">
+      <div class="wrapper">
+        <h2 class="section__title">Projetos</h2>
+
+        <div class="grid" data-layout="projects">
+
+          <article class="card">
+            <h3 class="card__title">LoL Summoner Match Manager</h3>
+            <p class="card__description">Ferramenta para gerenciar dados de partidas de League of Legends, permitindo visualizar, analisar e acompanhar o hist&oacute;rico de partidas.</p>
+            <p class="card__tech"><strong>Tecnologias:</strong> HTML5, CSS3, FastAPI, MongoDB</p>
+            <a href="https://github.com/iantoniolo/lol-summoner-match-manager" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">
+              <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#icon-github"></use></svg>
+              Ver no GitHub
+            </a>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Financial Wallet</h3>
+            <p class="card__description">Aplicativo para gerenciamento seguro de pagamentos com APIs RESTful. Utiliza NestJS, JWT para autentica&ccedil;&atilde;o e PostgreSQL para armazenamento.</p>
+            <p class="card__tech"><strong>Tecnologias:</strong> Node.js, Nest.js, Typescript, PostgreSQL, Docker</p>
+            <a href="https://github.com/iantoniolo/financial-wallet" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">
+              <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#icon-github"></use></svg>
+              Ver no GitHub
+            </a>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">ToDoList Spring Boot API</h3>
+            <p class="card__description">API de lista de tarefas em Java com Spring Boot, autentica&ccedil;&atilde;o JWT, PostgreSQL, Docker e testes automatizados.</p>
+            <p class="card__tech"><strong>Tecnologias:</strong> Java, Spring Boot, JWT, PostgreSQL, Docker, JUnit</p>
+            <a href="https://github.com/iantoniolo/todolist-spring" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">
+              <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#icon-github"></use></svg>
+              Ver no GitHub
+            </a>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">CNJ Processor</h3>
+            <p class="card__description">Aplica&ccedil;&atilde;o web para consulta e processamento de n&uacute;meros CNJ com valida&ccedil;&atilde;o, enfileiramento ass&iacute;ncrono e rastreamento de resultados. Projetada para escalabilidade e automa&ccedil;&atilde;o em fluxos de dados judiciais.</p>
+            <p class="card__tech"><strong>Tecnologias:</strong> Serverless, GitHub Actions, Angular, Node.js, AWS Lambda, SQS, DynamoDB, CloudWatch</p>
+            <a href="https://github.com/iantoniolo/cnj-processor" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">
+              <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#icon-github"></use></svg>
+              Ver no GitHub
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCES -->
+    <section id="experiences" class="section animate-on-scroll">
+      <div class="wrapper">
+        <h2 class="section__title">Experi&ecirc;ncias</h2>
+
+        <div class="timeline">
+
+          <div class="timeline__item">
+            <h3 class="timeline__role">Desenvolvedor Full Stack</h3>
+            <p class="timeline__meta">BT Cr&eacute;ditos &bull; Jun 2025 &ndash; Presente</p>
+            <ul class="timeline__responsibilities">
+              <li>Arquitetei e implementei pipeline ass&iacute;ncrono de processamento de holerites com AWS Textract (OCR), Lambda, SQS/SNS, DynamoDB Streams e WebSockets, reduzindo o tempo de processamento de dias para 2–5 minutos por arquivo.</li>
+              <li>Projetei nova modelagem de dados para migra&ccedil;&atilde;o do sistema de KYC jur&iacute;dico trabalhista, normalizando entidades complexas em tabelas independentes e mantendo sincronia bidirecional com a base legada.</li>
+              <li>Implementei fluxo completo de KYC com verifica&ccedil;&atilde;o biom&eacute;trica (liveness) via integra&ccedil;&atilde;o com idwall, conectando frontend Vue.js com backend serverless em Python/AWS Lambda.</li>
+              <li>Integrei servi&ccedil;os de IA para an&aacute;lise automatizada de contratos e documentos jur&iacute;dicos na plataforma principal de gest&atilde;o de casos.</li>
+              <li>Desenvolvi painel administrativo em Angular com controle de acesso baseado em roles (RBAC), utilizando AWS Cognito para autentica&ccedil;&atilde;o OAuth.</li>
+              <li>Estruturei pipelines de CI/CD com GitHub Actions para testes automatizados, linting e deploy em m&uacute;ltiplos ambientes (staging/produ&ccedil;&atilde;o) utilizando CloudFormation/SAM como IaC.</li>
+              <li>Modelei banco de dados relacional (PostgreSQL) e DynamoDB com GSIs para rastreamento de casos, contratos e preven&ccedil;&atilde;o a fraudes.</li>
+              <li>Diagnostiquei e resolvi incidente em produ&ccedil;&atilde;o no pipeline de holerites causado por incompatibilidade de tipos num&eacute;ricos (float vs Decimal) no DynamoDB, identificando root cause via CloudWatch Logs.</li>
+              <li>Orientei dois colegas (pleno e j&uacute;nior) na prepara&ccedil;&atilde;o para certifica&ccedil;&otilde;es AWS, com ambos aprovados.</li>
+            </ul>
+          </div>
+
+          <div class="timeline__item">
+            <h3 class="timeline__role">Desenvolvedor Backend</h3>
+            <p class="timeline__meta">Zax App &bull; Mai 2024 &ndash; Jun 2025</p>
+            <ul class="timeline__responsibilities">
+              <li>Liderei o projeto de Listas Personalizadas, permitindo que lojistas segmentem clientes por m&uacute;ltiplos filtros e disparem campanhas automatizadas de WhatsApp, contribuindo para aumento na capta&ccedil;&atilde;o e reengajamento.</li>
+              <li>Constru&iacute; integra&ccedil;&otilde;es com parceiros externos para automa&ccedil;&atilde;o de fluxos operacionais na plataforma Zax 360.</li>
+              <li>Containerizei aplica&ccedil;&otilde;es com Docker/Docker Compose, padronizando ambientes de desenvolvimento e simplificando deploys.</li>
+              <li>Desenvolvi microsservi&ccedil;os em Node.js/NestJS para modularizar funcionalidades da plataforma, separando dom&iacute;nios de neg&oacute;cio em servi&ccedil;os independentes.</li>
+            </ul>
+          </div>
+
+          <div class="timeline__item">
+            <h3 class="timeline__role">Estagi&aacute;rio de Desenvolvimento</h3>
+            <p class="timeline__meta">Zax App &bull; Set 2022 &ndash; Abr 2024</p>
+            <ul class="timeline__responsibilities">
+              <li>Assumi ownership do servi&ccedil;o de atendimento da plataforma, sendo principal respons&aacute;vel pela continuidade, manuten&ccedil;&atilde;o e implementa&ccedil;&atilde;o de melhorias.</li>
+              <li>Desenvolvi a Assistente Virtual Zaya, chatbot que antecipa atendimentos humanos e estrutura informa&ccedil;&otilde;es para analistas quando n&atilde;o resolve autonomamente, reduzindo significativamente o volume de atendimentos manuais.</li>
+              <li>Implementei e gerenciei cronjobs para processamento de dados e manuten&ccedil;&atilde;o de integridade, al&eacute;m de solu&ccedil;&otilde;es de backend para otimiza&ccedil;&atilde;o de processos recorrentes.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>Copyright &copy; 2026 por Ian Toniolo. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>

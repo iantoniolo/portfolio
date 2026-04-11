@@ -1,0 +1,55 @@
+@layer base {
+  :root {
+    color-scheme: light dark;
+
+    /* --- Colors (light-dark) --- */
+    --color-bg: light-dark(#f9fafb, #262626);
+    --color-bg-alt: light-dark(#f3f4f6, #171717);
+    --color-bg-surface: light-dark(#ffffff, #171717);
+    --color-text: light-dark(#111827, #ffffff);
+    --color-text-muted: light-dark(#6b7280, #d1d5db);
+    --color-accent: #fbbf24;
+    --color-accent-hover: #f59e0b;
+    --color-border: light-dark(#e5e7eb, #404040);
+
+    /* --- Fluid typography (clamp) --- */
+    --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.8rem);
+    --text-sm: clamp(0.8rem, 0.75rem + 0.3vw, 0.875rem);
+    --text-base: clamp(0.9rem, 0.85rem + 0.3vw, 1rem);
+    --text-lg: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
+    --text-xl: clamp(1.15rem, 1rem + 0.7vw, 1.25rem);
+    --text-2xl: clamp(1.3rem, 1.1rem + 1vw, 1.5rem);
+    --text-3xl: clamp(1.6rem, 1.3rem + 1.5vw, 1.875rem);
+    --text-4xl: clamp(2rem, 1.5rem + 2.5vw, 2.5rem);
+
+    /* --- Spacing --- */
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+    --space-3xl: 4rem;
+    --space-section: clamp(3rem, 2rem + 5vw, 6rem);
+
+    /* --- Layout --- */
+    --max-width: 72rem;
+    --nav-height: 4rem;
+
+    /* --- Shadows --- */
+    --shadow-sm: 0 1px 2px light-dark(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.3));
+    --shadow-md: 0 4px 6px -1px light-dark(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
+    --shadow-lg: 0 10px 15px -3px light-dark(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
+    --shadow-accent: 0 4px 14px rgba(251, 191, 36, 0.25);
+
+    /* --- Transitions --- */
+    --transition-fast: 150ms ease;
+    --transition-base: 300ms ease;
+
+    /* --- Radius --- */
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-full: 9999px;
+  }
+}
