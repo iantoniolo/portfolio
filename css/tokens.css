@@ -1,6 +1,7 @@
 @layer base {
   :root {
     color-scheme: light dark;
+    interpolate-size: allow-keywords;
 
     /* --- Colors (light-dark) --- */
     --color-bg: light-dark(#f9fafb, #262626);
